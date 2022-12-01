@@ -1,14 +1,14 @@
-defmodule AdventOfCode.$(name)Test do
+defmodule Aoc2022.Day01Test do
   use ExUnit.Case
 
-  import AdventOfCode.$name
+  import Aoc2022.Day01
 
   @tag :skip
   test "part1" do
     input = nil
     result = part1(input)
 
-    assert result
+    assert result == 68467
   end
 
   @tag :skip
@@ -16,6 +16,6 @@ defmodule AdventOfCode.$(name)Test do
     input = nil
     result = part2(input)
 
-    assert result
+    assert result == 203_420
   end
 end

@@ -1,11 +1,11 @@
-defmodule Mix.Tasks.$NAME.P1 do
+defmodule Mix.Tasks.Day01.P1 do
   use Mix.Task
 
-  import Aoc2022.$NAME
+  import Aoc2022.Day01
 
-  @shortdoc "$NAME Part 1"
+  @shortdoc "Day01 Part 1"
   def run(_args) do
-    {:ok, input} = File.read("inputs/$LOWERNAME.txt")
+    {:ok, input} = File.read("inputs/day01.txt")
 
     String.split(input, "\n")
     |> part1()
