@@ -3,18 +3,22 @@ defmodule Aoc2022.Day02Test do
 
   import Aoc2022.Day02
 
-  @tag :skip
   test "part1" do
-    input = nil
-    result = part1(input)
+    {:ok, input} = File.read("inputs/day02.txt")
+
+    result =
+      String.split(input, "\n")
+      |> part1()
 
     assert result == 13484
   end
 
-  @tag :skip
   test "part2" do
-    input = nil
-    result = part2(input)
+    {:ok, input} = File.read("inputs/day02.txt")
+
+    result =
+      String.split(input, "\n")
+      |> part2()
 
     assert result == 13433
   end

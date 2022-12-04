@@ -3,18 +3,18 @@ defmodule Aoc2022.$TESTNAME do
 
   import Aoc2022.$NAME
 
-  @tag :skip
   test "part1" do
-    input = nil
-    result = part1(input)
+    {:ok, input} = File.read("inputs/$LOWERNAME.txt")
+    result = String.split(input, "\n")
+    |> part1()
 
     assert result
   end
 
-  @tag :skip
   test "part2" do
-    input = nil
-    result = part2(input)
+    {:ok, input} = File.read("inputs/$LOWERNAME.txt")
+    result = String.split(input, "\n")
+    |> part2()
 
     assert result
   end
